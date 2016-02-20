@@ -1,7 +1,9 @@
-<?php defined('SYSPATH') or die('No direct script access');
+<?php
+
+defined('SYSPATH') or die('No direct script access');
 
 return array(
-    'title'       => 'YGServer',
+    'title' => 'YGServer',
     'description' => 'ygserver.com',
     'site_name' => 'YGServer.com',
 );
