@@ -5,13 +5,13 @@
         <meta name=viewport content="width=device-width, initial-scale=1">
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $description; ?>" />
-<?php foreach($styles as $style): ?>
-    <link href="<?php echo URL::base(); ?>pub/css/<?php echo $style; ?>.css" rel="stylesheet" type="text/css" />
-<?php endforeach; ?>
+        <?php foreach ($styles as $style): ?>
+            <link href="<?php echo URL::base(); ?>pub/css/<?php echo $style; ?>.css" rel="stylesheet" type="text/css" />
+        <?php endforeach; ?>
     </head>
     <body>
         <div id="container">
-              <?php echo $header; ?>
+            <?php echo $header; ?>
             <div id="content">
                 <div id="sidebar"><?php echo $sidebar; ?></div><!-- #sidebar  -->
                 <div id="cont"><?php echo $content; ?></p></div><!-- #cont -->
