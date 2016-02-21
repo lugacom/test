@@ -1,7 +1,7 @@
 <div id="header">
     <div id="logo">
-        <a href="<?php echo URL::site(''); ?>"><img src="/pub/img/logo.png" alt="ygserver.com" /></a>
-    </div> #logo 
+        <a href="<?php echo URL::site(''); ?>"><img src="/pub/adm/img/logo.png" alt="ygserver.com" /></a>
+    </div><!-- #logo --> 
 </div><!-- #header -->
 <div id="topmenu">
     <ul id="menu">
