@@ -2,13 +2,13 @@
 
 defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Main extends Controller_Common {
+class Controller_Adm_Main extends Controller_Adm_Common {
 
     public function action_index() {
 
         $articles = array();
 
-        $content = View::factory('main')
+        $content = View::factory('/adm/main')
                 ->bind('articles', $articles);
 
         $articles = Model::factory('Articles')->get_all();
@@ -19,7 +19,7 @@ class Controller_Main extends Controller_Common {
     public function action_article() {
         $id = $this->request->param('id');
 
-        $content = View::factory('single')
+        $content = View::factory('/adm/single')
                 ->bind('article', $article);
 //                        ->bind('comments', $comments);
 

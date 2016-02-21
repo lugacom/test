@@ -14,16 +14,16 @@ abstract class Controller_Adm_Common extends Controller_Template {
         $description = $site_config->get('description');
         $site_name = $site_config->get('site_name');
 
-        $header = View::factory('header');
-        $sidebar = View::factory('sidebar');
-        $footer = View::factory('footer');
+        $header = View::factory('/adm/header');
+        $sidebar = View::factory('/adm/sidebar');
+        $footer = View::factory('/adm/footer');
 
         View::set_global('title', $title);
         View::set_global('description', $description);
         View::set_global('site_name', $site_name);
 
         $this->template->content = '';
-        $this->template->styles = array('adm');
+        $this->template->styles = array('admin');
         $this->template->scripts = '';
         $this->template->header = $header;
         $this->template->sidebar = $sidebar;

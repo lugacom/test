@@ -17,6 +17,13 @@ Route::set('static', '<action>(/<id>)', array('action' => 'about|contacts'))
             'controller' => 'static',
         ));
 
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
+        ->defaults(array(
+            'directory'  => 'adm',
+            'controller' => 'main',
+            'action' => 'index',
+        ));
+
 Route::set('default', '(<controller>(/<action>(/<id>)))')
         ->defaults(array(
             'controller' => 'main',
