@@ -42,7 +42,7 @@ a{
 
 #header{
     height: 60px;
-    background: linear-gradient(to bottom, #fff 0%, #e0e0e0 70%);
+    background-color: #4E4E4E;
     box-shadow: -8px 8px 10px rgba(0,0,0,.7);
     border: #848484 1px solid;
 }
