@@ -17,7 +17,7 @@ abstract class Controller_Common extends Controller_Template {
         $header = View::factory('header');
         $sidebar = View::factory('sidebar');
         $footer = View::factory('footer');
-        $out = Request::factory('sidebar/widget')->execute();
+$out = Request::factory('sidebar/widget')->execute();
 
         View::set_global('title', $title);
         View::set_global('description', $description);
