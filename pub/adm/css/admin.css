@@ -144,20 +144,22 @@ li.current_page_item a{
 }
 
 #cont {
-    width: 75%;
+    width: 77%;
     float: right;
-    margin: 5px 10px 0 5px;
+    margin: 5px 0 0 0;
     overflow: hidden;
 }
 
 .post-main {
-    width: 100%;
-    float: right;
-    margin: 0 0 5px 0;
-    border-bottom: #cdcaca 1px solid;
+    width: 47%;
+    float: left;
+    margin: 0 0 5px 5px;
+    padding: 5px;
+    border: #cdcaca 1px solid;
 }
 .post-main h1 {
     margin: 0;
+/*    padding: 5px;*/
     font: normal 14px Verdana, Helvetica, Arial, sans-serif;
     color: #6699ff;
 }

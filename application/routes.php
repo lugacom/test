@@ -6,6 +6,12 @@ defined('SYSPATH') or die('No direct script access.');
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+Route::set('sidebar', 'sidebar/(<action>)')
+    ->defaults(array(
+        'controller' => 'sidebar',
+        'action'     => 'widget',
+    ));
+
 Route::set('articles', '<articles>/<id>-<artname>', array('id' => '[0-9]+'), array('artname' => '.+'))
         ->defaults(array(
             'controller' => 'main',
@@ -17,7 +23,7 @@ Route::set('static', '<action>(/<id>)', array('action' => 'about|contacts'))
             'controller' => 'static',
         ));
 
-Route::set('adm', 'admin(/<controller>(/<action>(/<id>)))')
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
         ->defaults(array(
             'directory'  => 'adm',
             'controller' => 'main',

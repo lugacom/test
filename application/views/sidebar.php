@@ -9,8 +9,8 @@
 <div class="vidget">
     <h1>Разделы</h1>
     <ul>
-        <li><a href="#">FreeBSD</a></li>
-        <li><a href="#">Kohana3</a></li>
-        <li><a href="#">Dokuwiki</a></li>
+        <?php foreach ($articles as $article): ?>
+        <li><a href="<?php echo URL::site('articles/' . $article['id'] . '-' . $article['alt_title']); ?>"><?php echo $article['title']; ?></a></li>
+<?php endforeach; ?>
     </ul>
 </div><!-- #vidget -->
