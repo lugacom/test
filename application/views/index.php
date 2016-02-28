@@ -13,7 +13,7 @@
         <div id="container">
             <?php echo $header; ?>
             <div id="content">
-                <div id="sidebar"><?php //echo $widget; ?></div><!-- #sidebar  -->
+                <div id="sidebar"><?php echo $sidebar; ?></div><!-- #sidebar  -->
                 <div id="cont"><?php echo $content; ?></p></div><!-- #cont -->
             </div><!--#content-->
             <div style="clear:both"></div><!--#clear-->
